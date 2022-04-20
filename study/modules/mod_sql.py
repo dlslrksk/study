@@ -14,12 +14,14 @@ import pymysql
 class Database():
     def __init__(self):
         self._db = pymysql.connect(
-        user = 'root',
-        passwd = 'dbtjr2293!',
-        host = 'localhost',
+        user = 'ubion',
+        passwd = '1234',
+        host = 'darkpreist.iptime.org',
         db = 'ubion',
-        charset = 'utf8'
+        port = 3306
         )
+
+# localhost랑 다르다
 
         self.cursor = self._db.cursor(pymysql.cursors.DictCursor)
 
